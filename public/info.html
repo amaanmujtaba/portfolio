@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>My website</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Neue+Montreal">
+
+    <link rel="stylesheet" href = "../style.css" />
+    <link rel="stylesheet" href = "./projects.css">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  </head>
+
+
+  <body>
+        <div id="particles-js"></div>
+        <div id="Page">
+            
+            <div class="container">
+                <div class = "item header">
+                    <header class="siteHeader" id="SiteHeader">
+                        <h2 class="siteHeaderTitle">Amaan Mujtaba Jaweed</h2>
+                        <p class="siteHeaderLabel">Developer, Data scientist & problem solver</p>
+                        <nav class="siteHeader_nav" x-data>
+                            <ol>
+                                <li>
+                                    <a class="_text" href="../index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a class="_text" href="./projects.html">Projects</a>
+                                </li>
+                                <li> <!--:class="{ 'is-selected': $store.app.currentPath === '/info/' } Figure out why this is used-->
+                                    <a class="_text" href="./info.html">Info</a>
+                                </li>
+                                <li>
+                                    <a class="_text" href="./contact.html">Contact</a>
+                                </li>
+                            </ol>
+                        </nav>
+                    </header>
+                </div>
+                <div class = "item content">
+                    <div class = "infoContent">
+                        <ul>
+                            <li>
+                                <a class="text-btn" href="https://www.linkedin.com/in/amaanjaweed/" target="_blank" rel="noopener">Linkedin ↗</a>
+                                
+                            </li>
+                            <li>
+                                <a class="text-btn" href="https://www.instagram.com/amaanjaweed/" target="_blank" rel="noopener">Instagram ↗</a>
+                            </li>
+                        </ul>
+
+                </div>
+            </div>
+        </div>
+        <script src = "../particles.js"></script>
+        <script src = "../app.js"></script>
+        <script src = "./index.js"></script>
+  </body>
+</html>
