@@ -23,7 +23,7 @@ particlesJS('particles-js',
         }
       },
       "color": {
-        "value": "#ffffff"
+        "value": "#000000"
       },
       "shape": {
         "type": "circle",
@@ -63,13 +63,13 @@ particlesJS('particles-js',
       "line_linked": {
         "enable": true,
         "distance": 150,
-        "color": "#ffffff",
+        "color": "#000000",
         "opacity": 0.4,
         "width": 1
       },
       "move": {
         "enable": true,
-        "speed": 6,
+        "speed": 8,
         "direction": "none",
         "random": false,
         "straight": false,
@@ -131,3 +131,17 @@ particlesJS('particles-js',
   }
 
 );
+
+const themeToggle = document.getElementById('themeToggle');
+
+themeToggle.addEventListener('change', () => {
+  if (themeToggle.checked) {
+    document.documentElement.style.setProperty('--color-background', 'var(--color-background-dark)');
+    document.documentElement.style.setProperty('--color-text', 'var(--color-text-dark)');
+    document.documentElement.style.setProperty('--color-border', 'var(--color-border-dark)');
+  } else {
+    document.documentElement.style.setProperty('--color-background', 'var(--color-background-light)');
+    document.documentElement.style.setProperty('--color-text', 'var(--color-text-light)');
+    document.documentElement.style.setProperty('--color-border', 'var(--color-border-light)');
+  }
+});
