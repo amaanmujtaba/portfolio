@@ -180,4 +180,27 @@ listItems.forEach(item => {
   });
 });
 
+dynamicText = document.getElementById('dynamicText');
 
+document.addEventListener('DOMContentLoaded', function () {
+    const roles = ['Software Developer.', 'Data Scientist.', 'Problem Solver.', 'Web Developer.', 'AI Enthusiast.'];
+    let index = 0;
+    let letterIndex = 0;
+
+    function updateDynamicText() {
+        const dynamicTextElement = document.getElementById('dynamicText');
+        const role = roles[index];
+
+        if (letterIndex < role.length) {
+            dynamicTextElement.textContent = `${role.substring(0, letterIndex + 1)}`;
+            letterIndex++;
+        } else {
+            // Move to the next role
+            index = (index + 1) % roles.length;
+            letterIndex = 0;
+        }
+    }
+
+    // Update text every 200 milliseconds (adjust the timing as needed)
+    setInterval(updateDynamicText, 200);
+});

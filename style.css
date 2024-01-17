@@ -3,20 +3,25 @@
     --color-text-light: #000000; /* Set your light mode text color */
     --color-border-light: #cccccc; /* Set your light mode border color */
     --color-particles-light: #333333; /* Set your light mode border color */
+    --color-hover-light : #e0e0e0;
+
 
 
     --color-background-dark: #333333; /* Set your dark mode background color */
     --color-text-dark: #ffffff; /* Set your dark mode text color */
     --color-border-dark: #999999; /* Set your dark mode border color */
     --color-particles-dark: #c4b0b078; /* Set your light mode border color */
+    --color-hover-dark: #444444;
+    ; /* Set your light mode border color */
 
 
     --color-background: var(--color-background-light);
     --color-text: var(--color-text-light);
     --color-border: var(--color-border-light);
     --color-particles: var(--color-particles-light);
+    --color-hover: var(--color-hover-light);
 
-    --transition-duration: 0.3s; /* Set your transition duration here */
+    --transition-duration: 0s; /* Set your transition duration here */
 
 }
 
@@ -41,6 +46,8 @@ html {
     -webkit-tap-highlight-color: rgba(0,0,0,0);
 
 }
+
+
 
 main,canvas {
     display: block
@@ -162,6 +169,10 @@ body {
     position: relative
 }
 
+.siteHeaderTitle{
+    font-size: 35px;
+}
+
 .container::-webkit-scrollbar { 
     display: none;  /* Safari and Chrome */
 }
@@ -200,7 +211,8 @@ body {
 
 
 .toggle-container {
-    margin-top: 90%; /* Push the toggle container to the bottom of the parent */
+    position: absolute;
+    margin-top: 24%; /* Push the toggle container to the bottom of the parent */
     display: flex;
     align-items: center;
     margin-left: 1rem;
@@ -263,10 +275,71 @@ body.dark-mode {
 
 
 
+/*hover*/
+.hover{
 
+    background-color: var(--color-hover);
+    color: var(--color-text);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+
+}
+
+.headerContent{
+    margin-left: 70%;
+    text-align: left;
+}
+.aboutMe{
+    margin-top: 5%;
+    margin-left: 50%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    
+    
+}
+
+.para{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.passion{
+    margin-top: 5%;
+    margin-left: 50px;
+}
+
+.currentStatus{
+    margin-top: 5%;
+    margin-left : 70%;
+
+}
+
+
+span{
+    font-weight: bolder;
+    margin-top: 5px;
+}
 #particles-js {
     position: fixed;
     width: 100%;
     height: 100%;
     z-index: -1; /* Place the particles behind other content */
     }
+
+.resume{
+    height: 98%;
+    width: 100%
+}
+@media only screen and (max-width: 600px) {
+    .resume {
+        display: none; /* Hide the iframe on smaller screens */
+    }
+
+    .download-link{
+        color: blue;
+        font-size: 40px;
+    }
+}
+

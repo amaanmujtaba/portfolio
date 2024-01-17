@@ -5,32 +5,33 @@
     <title>My website</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Neue+Montreal">
-    <link rel="stylesheet" href = "./projects.css">
-    <link rel="stylesheet" href = "../style.css" />
 
+    <link rel="stylesheet" href = "../style.css" />
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+
   </head>
 
 
   <body>
         <div id="particles-js"></div>
         <div id="Page">
-
+            
             <div class="container">
                 <div class = "item header">
                     <header class="siteHeader" id="SiteHeader">
-                        <h2 class="siteHeaderTitle">Amaan Mujtaba Jaweed</h2>
+                        <h1 class="siteHeaderTitle">Amaan Mujtaba Jaweed</h1>
                         <p class="siteHeaderLabel">Developer, Data scientist & problem solver</p>
                         <nav class="siteHeader_nav" x-data>
                             <ol>
                                 <li>
-                                    <a class="_text" href="./home.html">Home</a>
-                                </li>
-                                <li>
                                     <div class="_dot">●</div>
                                 </li>
+                                <li>
+                                    <a class="_text" href="./projects.html">Projects</a>
+                                </li>
                                 <li> <!--:class="{ 'is-selected': $store.app.currentPath === '/info/' } Figure out why this is used-->
-                                    <a class="_text" href="./info.html">Info</a>
+                                    <a class="_text" href="../index.html">Info</a>
                                 </li>
                                 <li>
                                     <a class="_text" href="./contact.html">Contact</a>
@@ -40,6 +41,9 @@
                                 </li>
                             </ol>
                         </nav>
+                        
+
+                        
                     </header>
                 </div>
                 <div class = "item bottomLeft" id = "bottomLeft">
@@ -54,55 +58,55 @@
                         
                     </div>
                 </div>
-                <div class = "item content">
-                    <!--/*<div class = "projectsTitle">
-                        <h1>Projects</h1>
-                    </div>*/-->
-                    <div class = "projects">
-                        <ol>
-                            <li class="DSCSTitles">■ Projects (Computer Science)</li>
-                                <ol class="projectsSubList" id = "CSProjects">
-                                    <li class = individualProject>
-                                        <p class="projectNames">UniTask Manager: Student Project & Deadline Organizer</p>
-                                        <p class="skills"> Skills: HTML, CSS, Javascript, Node.js, MYSql, </p>
-                                    </li>
-                                    <li class = individualProject>
-                                        <p class="projectNames">SportsMania Tournament Management System</p>
-                                        <p class="skills"> Skills: HTML, CSS, Javascript, Node.js </p>
-                                    </li>
+                <div class = "item content" id = "homeContent">
+                    <section class = "aboutMe">
+                        <h2>About me:</h2>
+                        <p class="para">
+                            <span class="aboutSpan">Hi Everyone.</span>
+                            <span class="aboutSpan">I am Amaan,</span>
+                            <span class="aboutSpan">originally from </span>
+                            <span class="aboutSpan">Hyderbad, India.</span>
+                            <span class="aboutSpan">Currently based </span>
+                            <span class="aboutSpan">in Rochester, NY.</span>    
+                        </p>
+                    </section>
+                    <section class = "passion">
+                        <h2 class="para">My Passions:</h2>
+                        <p class="para">
+                            <span class="aboutSpan">I am passionate about</span>
+                            <span class="aboutSpan">1) Coding (Since 2016)</span>
+                            <span class="aboutSpan">2) Building websites(Since 2021)</span> 
+                            <span class="aboutSpan">3) Data Science(Since 2022)</span>
+                            <span class="aboutSpan">4) Working out (Since 2022)</span>
+                            <span class="aboutSpan">5) Football (Since 2011)</span>
+                            <span class="aboutSpan">6) Roundnet (Since 2023)</span> 
+                        </p>
+                    </section>
 
-                                
+                    <section class = "currentStatus">
+                        <h2 class = "para">Currently:</h2>
+                        <p class = "para">
+                            <span class="aboutSpan">I am currently looking</span>
+                            <span class="aboutSpan">for software development </span>
+                            <span class="aboutSpan">job opportunities in the</span> 
+                            <span class="aboutSpan">US while working as a</span>
+                            <span class="aboutSpan">front-end developer</span>
+                            <span class="aboutSpan">for Faircon construction</span> 
+                            <span class="aboutSpan">company based in India. </span>
+                        </p>
+                    </section>
+                    <p>
 
-                                    
-                                    
-                                </ol>
-                            <li class="DSCSTitles">■ Projects (Data Science)</li>
-                                <ol class="projectsSubList" id = "DSProjects">
-                                    <li class = individualProject>
-                                        <p class="projectNames">Bike Sharing Forecasting</p>
-                                        <p class="skills"> Skills: ETL, python, forecasting, time series, model development, model deployment and monitoring </p>
-                                    </li>
-                                    <li class = individualProject>
-                                        <p class="projectNames">DISC personality trait prediction using Twitter</p>
-                                        <p class="skills">Skills:  Python, NLP, NLTK, Twitter APIs, matplotlib </p>
-                                    </li>
-                                    <li class = individualProject>
-                                        <p class="projectNames">Age and Gender Identification</p>
-                                        <p class="skills"> Skills: Python, Deep learning, openCV </p>
-                                    </li>
-                                    <li class = individualProject>
-                                        <p class="projectNames">Public Opinion on Student Loan Forgiveness</p>
-                                        <p class="skills"> Skills: Python, NLP, NLTK, Twitter APIs, matplotlib, Topic Modelling </p>
-                                    </li>
-
-                                </ol>
-                            
-                        </ol>
-                    </div>
+                    </p>
                     
                 </div>
+
+
             </div>
         </div>
+
+
+       
         <!--
 
         <header class="siteHeader" id="SiteHeader">
@@ -132,10 +136,18 @@
             <li>SportsMania Tournament Management System</li>
             <li>UniTask Manager: Student Project & Deadline Organizer</li>
         </ol>
-             -->
+        -->
+        
+        <script src="../public/index.js"></script>
         <script src = "../particles.js"></script>
         <script src = "../app.js"></script>
-        <script src = "./index.js"></script>
-   
   </body>
 </html>
+
+
+
+
+
+
+
+

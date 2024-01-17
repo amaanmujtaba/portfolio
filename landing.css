@@ -1,0 +1,155 @@
+:root {
+    --color-background-light: #ffffff; /* Set your light mode background color */
+    --color-text-light: #000000; /* Set your light mode text color */
+    --color-border-light: #cccccc; /* Set your light mode border color */
+    --color-particles-light: #333333; /* Set your light mode border color */
+    --color-hover-light : #e0e0e0;
+
+    --color-background-dark: #333333; /* Set your dark mode background color */
+    --color-text-dark: #ffffff; /* Set your dark mode text color */
+    --color-border-dark: #999999; /* Set your dark mode border color */
+    --color-particles-dark: #c4b0b078; /* Set your light mode border color */
+    --color-hover-dark: #444444;
+     /* Set your light mode border color */
+
+    --color-background: var(--color-background-light);
+    --color-text: var(--color-text-light);
+    --color-border: var(--color-border-light);
+    --color-particles: var(--color-particles-light);
+    --color-hover: var(--color-hover-light);
+
+    --transition-duration: 0s; /* Set your transition duration here */
+
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-color: var(--color-background);
+    font-family: "Neue Montreal";
+    overscroll-behavior: none;
+    color: var(--color-text);
+
+    transition: background-color var(--transition-duration), color var(--transition-duration);
+}
+
+.container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-text);
+    height: 98vh;
+    width:100%;
+    background-color: var(--color-background);
+    overflow: hidden ;
+    overscroll-behavior: none;
+    background: transparent;
+    font-family: "Neue Montreal";
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+    transition: background-color var(--transition-duration), color var(--transition-duration);
+}
+
+
+.container::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+#dynamicText {
+    margin-top: -5px;
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--color-text);
+}
+
+
+.icons{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.logo{
+    margin-right: 10px;
+}
+
+.toggle-container{
+    /* background-color: blue; */
+    position: absolute;
+    bottom:0;
+
+}
+
+.toggle-container {
+    position: absolute;
+    margin-top: 24%; /* Push the toggle container to the bottom of the parent */
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+    
+}
+
+
+.switch {
+    margin-left: 5px;
+    margin-right: 5px;
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc; /* Default color of the slider */
+    transition: 0.4s;
+    border-radius: 20px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: '';
+    height: 20px;
+    width: 20px;
+    left: 0px;
+    bottom: 0px;
+    background-color: white; /* Default color of the knob */
+    transition: 0.4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #0d0e0f; /* Color of the slider when toggled */
+}
+  
+  input:checked + .slider:before {
+    transform: translateX(20px); /* Move the knob to the right when toggled */
+}
+
+
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place the particles behind other content */
+}
+
+

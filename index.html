@@ -1,107 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
-    <title>My website</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href = "./landing.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Neue+Montreal">
-
-    <link rel="stylesheet" href = "./style.css" />
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+<body>
+    <div id="particles-js"></div>
 
+    
+    <div class = "container">
+        <h1> Hello, I am Amaan. </h1> 
+        <p id="dynamicText"></p>  
 
-  </head>
+        <div class = "icons">
+            <a class = "logo" href="./index.html" target="_blank">
+                <img src="./public/portfolio.png" alt="LinkedIn Logo">
+            </a>
+            <a class = "logo" href="https://www.linkedin.com/in/amaanjaweed" target="_blank">
+                <img src="./public/linkedin.png" alt="LinkedIn Logo">
+            </a>
+            <a class = "logo" href="https://github.com/amaanmujtaba" target="_blank">
+                <img src="./public/github.png" alt="LinkedIn Logo">
+            </a>
+            <a class = "logo" href="https://www.instagram.com/amaanjaweed/" target="_blank">
+                <img src="./public/insta.png" alt="LinkedIn Logo">
+            </a>
 
-
-  <body>
-        <div id="particles-js"></div>
-        <div id="Page">
+            <a class = "logo" href="mailto: amaanmujtaba@gmail.com" target="_blank">
+                <img src="./public/mail.png" alt="LinkedIn Logo">
+            </a>
             
-            <div class="container">
-                <div class = "item header">
-                    <header class="siteHeader" id="SiteHeader">
-                        <h2 class="siteHeaderTitle">Amaan Mujtaba Jaweed</h2>
-                        <p class="siteHeaderLabel">Developer, Data scientist & problem solver</p>
-                        <nav class="siteHeader_nav" x-data>
-                            <ol>
-                                <li>
-                                    <a class="_text" href="/index.html">Home</a>
-                                </li>
-                                <li>
-                                    <a class="_text" href="./public/projects.html">Projects</a>
-                                </li>
-                                <li> <!--:class="{ 'is-selected': $store.app.currentPath === '/info/' } Figure out why this is used-->
-                                    <a class="_text" href="./public/info.html">Info</a>
-                                </li>
-                                <li>
-                                    <a class="_text" href="./public/contact.html">Contact</a>
-                                </li>
-                            </ol>
-                        </nav>
-                        
-
-                        
-                    </header>
-                </div>
-                <div class = "item bottomLeft" id = "bottomLeft">
-                    <!-- This is toggle -->
-                    <div class="toggle-container">
-                        <span id="themeLabel">Light mode</span>
-                        <label class="switch">
-                        <input type="checkbox" id="themeToggle">
-                        <span class="slider round"></span>
-                        </label>
-                        <span id="themeLabel">Dark mode</span>
-                        
-                    </div>
-                </div>
-                <div class = "item content" id = "homeContent">
-                    <h1>content</h1>
-                    <p>Blahhhh</p>
-                </div>
-            </div>
-        </div>
-        <!--
-
-        <header class="siteHeader" id="SiteHeader">
-            <h1 class="siteHeaderTitle">Amaan Mujtaba Jaweed</h1>
-            <p class="siteHeaderLabel">Developer, Data scientist & problem solver</p>
-        </header>
-
-    -->
-
-
-        <!--
-        <h3 style="margin-top: 200px ;">Experience</h3>
-        <ol>
-            <li><h4> Software Developer Intern at Thomson Reuters</h4></li>
-            <img src="./tr.jpg" width = "400" height ="200"/>
-            <li><h4>Teaching assistant at University of Rochester</h4></li>
-        </ol>
-
-        <hr>
-        <h3>My projects:</h3>
-        <ol>
-            <li>DISC personality trait prediction using Twitter</li>
-            skills: python, NLP
-            <li>Deep Learning-Based Individual Profiling for Age and Gender Identification</li>
-            <li>Public Opinion on Student Loan Forgiveness</li>
-            <li>End-to-End Data Science Project for Bike Sharing Forecasting</li>
-            <li>SportsMania Tournament Management System</li>
-            <li>UniTask Manager: Student Project & Deadline Organizer</li>
-        </ol>
-        -->
+            
+        </div> 
         
-        <script src="./public/index.js"></script>
-        <script src = "./particles.js"></script>
-        <script src = "./app.js"></script>
-  </body>
+        <!-- This is toggle -->
+        <div class="toggle-container">
+            <span id="themeLabel">Light mode</span>
+            <label class="switch">
+            <input type="checkbox" id="themeToggle">
+            <span class="slider round"></span>
+            </label>
+            <span id="themeLabel">Dark mode</span>
+            
+        </div>
+
+    </div>
+
+
+    <script src="./public/index.js"></script>
+    <script src = "./particles.js"></script>
+    <script src = "./landing.js"></script>
+</body>
 </html>
-
-
-
-
-
-
-
-
