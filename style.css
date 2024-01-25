@@ -283,6 +283,11 @@ body.dark-mode {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
 
 }
+.individualProject a:hover .projectNames {
+    background-color: var(--color-hover);
+    color: var(--color-text);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+}
 
 .headerContent{
     margin-left: 70%;

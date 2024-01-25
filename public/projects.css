@@ -65,3 +65,9 @@
 .projectNames {
     text-align: right
 }
+
+.individualProject a:hover .projectNames {
+    color: #007BFF; /* Change the color to your preferred hover color */
+    text-decoration: underline; /* You can customize the underline or remove it */
+    cursor: pointer; /* Set cursor to pointer for better user experience */
+}
